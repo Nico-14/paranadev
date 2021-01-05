@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web desarrollo</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        <a href="/"> <img src="<%=require('./assets/logo.svg')%>" alt="ParanáDev" class="header__logo" /> </a>
+      </h1>
+      <nav class="nav" id="navbar">
+        <a class="nav__link active" href="#inicio" onclick="window.handleLinkClick(event.currentTarget)">Inicio</a>
+        <a class="nav__link" href="#nosotros" onclick="window.handleLinkClick(event.currentTarget)">Nosotros</a>
+        <a class="nav__link" href="#servicios" onclick="window.handleLinkClick(event.currentTarget)">Servicios</a>
+        <a class="nav__link" href="#inicio" onclick="window.handleLinkClick(event.currentTarget)">Contacto</a>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="section section-inicio" id="inicio">
+        <div class="section-inicio__main-content">
+          <h1 class="section-inicio__title">Paraná Dev</h1>
+          <p class="section-inicio__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit delectus culpa at reiciendis, dicta
+            fugiat dignissimos ullam exercitationem.
+          </p>
+        </div>
+        <img src="<%=require('./assets/illustration1.svg')%>" class="section-inicio__illustration" />
+      </section>
+      <section class="section section-nosotros" id="nosotros">
+        <h2 class="section-nosotros__title">Nosotros</h2>
+        <div class="section-nosotros__main-content">
+          <img src="<%=require('./assets/illustration2.svg')%>" />
+          <p class="section-nosotros__text">
+            Somos Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur turpis ante, convallis sit amet
+            risus at, lacinia pulvinar nulla. Aliquam sed purus vel ante blandit elementum non molestie tellus.
+            <br />
+            <br />¿Por qué elegirnos? <br />Curabitur turpis ante, convallis sit amet risus at, lacinia pulvinar nulla.
+            Aliquam sed purus vel ante blandit elementum non molestie tellus. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Odit nam impedit repellat exercitationem incidunt labore error autem culpa aliquid
+            dignissimos et, nostrum enim natus aspernatur illum quas? Pariatur, consequatur voluptatibus.
+          </p>
+        </div>
+      </section>
+      <section class="section section-servicios" id="servicios">
+        <h2 class="section-servicios__title">Servicios</h2>
+        <div class="section-servicios__main-content"></div>
+      </section>
+    </main>
+  </body>
+</html>
