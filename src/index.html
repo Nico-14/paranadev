@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ParanaDev - Diseño y desarrollo web para tu empresa o emprendimiento.</title>
+    <meta
+      name="description"
+      content="Empresa argentina dedicada al diseño y desarrollo web para empresas y emprendimientos. Soluciones para sitios web existentes."
+    />
+    <meta name="author" content="Mateo Nicolás Ledesma" />
+
+    <meta name="copyright" content="Copyright © 2021 ParanaDev" />
     <link rel="icon" type="image/svg+xml" href="<%=require('./assets/favicon.svg')%>" sizes="any" />
 
     <!-- Primary Meta Tags -->
@@ -31,6 +38,14 @@
     />
   </head>
   <body>
+    <button id="go-to-top-button">
+      <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.9967 0.713148L1.25049 12.9596C0.549317 13.7586 0.59578 14.9666 1.35626 15.7094L2.02965 16.3672C2.85163 17.1701 4.17697 17.1207 4.93567 16.2577C7.58421 13.2452 13.1206 7 13.5 7C13.8794 7 19.4158 13.2452 22.0643 16.2577C22.823 17.1207 24.1484 17.1701 24.9704 16.3672L25.6437 15.7094C26.4042 14.9666 26.4507 13.7586 25.7495 12.9596L15.0033 0.71315C14.2067 -0.194668 12.7933 -0.19467 11.9967 0.713148Z"
+          fill="#f2f2f2"
+        />
+      </svg>
+    </button>
     <header class="header">
       <h1 class="header__title">
         <a href="/"> <img src="<%=require('./assets/logo.svg')%>" alt="ParanáDev" class="header__logo" /> </a>
@@ -53,7 +68,6 @@
       <section class="section section-inicio" id="inicio">
         <div class="section-inicio__content-group">
           <h2 class="section-inicio__title">Diseño y desarrollo web para tu empresa o emprendimiento.</h2>
-          <!-- <p class="section-inicio__text">Desarrollamos tu web a medida como siempre la quisiste!</p> -->
         </div>
         <img src="<%=require('./assets/illustration1.svg')%>" class="section-inicio__illustration" />
       </section>
@@ -75,8 +89,11 @@
       </section>
       <section class="section section-servicios" id="servicios">
         <h2 class="section-servicios__title">Servicios</h2>
-        <div class="section-servicios__main-content"></div>
+        <p>...</p>
       </section>
     </main>
+    <footer class="footer">
+      <p>Copyright © 2021 paranadev.com</p>
+    </footer>
   </body>
 </html>
