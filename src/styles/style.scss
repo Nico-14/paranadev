@@ -106,7 +106,7 @@ body {
 }
 
 .content {
-  padding: 0 30px;
+  padding: 0 15px 50px 15px;
   display: flex;
   flex-direction: column;
 }
@@ -119,22 +119,28 @@ body {
   flex-wrap: wrap;
   margin: 4em 0;
   scroll-margin-top: 7em;
-  h2 {
+  &__title {
+    color: var(--primary-color);
+    font-weight: 500;
     margin-top: 0;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
   }
 }
 
 .section-inicio {
-  margin-top: 1em;
-  &__content-group,
+  margin-top: 2em;
+  &__title,
   &__illustration {
     width: 100%;
   }
 
   &__title {
-    font-weight: 500;
-    color: var(--primary-color);
+    width: auto;
+    text-align: left;
     font-size: 2.5rem;
+    margin: 0 0 1em 0;
   }
 
   &__text {
@@ -144,14 +150,6 @@ body {
 }
 
 .section-nosotros {
-  &__title {
-    font-weight: 500;
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    width: 100%;
-    text-align: center;
-  }
-
   &__illustration,
   &__text {
     width: 100%;
@@ -165,13 +163,36 @@ body {
 
 .section-servicios {
   flex-direction: column;
-  &__title {
-    font-weight: 500;
-    color: var(--primary-color);
-    font-size: 1.8rem;
+  &__content {
+    display: grid;
+    gap: 4em 8vw;
+    justify-items: center;
   }
-  &__main-content {
-    display: flex;
+}
+
+.section-servicios-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+    height: 4rem;
+    padding: 1em 0;
+    box-sizing: content-box;
+  }
+  &__img {
+    height: 10rem;
+    margin-bottom: 3em;
+  }
+  &__text {
+    margin: 0 0 auto 0;
+    color: var(--primary-text-color);
+    text-align: center;
+    font-size: 1.1rem;
   }
 }
 
@@ -185,7 +206,7 @@ body {
   }
 
   .content {
-    padding: 0 60px;
+    padding: 0 60px 50px 60px;
   }
 
   .nav {
@@ -198,9 +219,9 @@ body {
 
   .section-inicio {
     margin-top: 4em;
-    &__content-group {
+    &__title {
       flex: 2;
-      margin-right: 2em;
+      margin: 0 2em 0 0;
     }
     &__illustration {
       flex: 3;
@@ -209,12 +230,21 @@ body {
 
   .section-nosotros {
     &__illustration {
-      flex: 4;
-      margin-right: 3em;
+      flex: 2;
     }
     &__text {
-      flex: 5;
+      margin-left: 8em;
+      flex: 2;
     }
+  }
+
+  .section-servicios {
+    &__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .section-servicios-service {
   }
 }
 

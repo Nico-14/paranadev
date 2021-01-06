@@ -72,30 +72,75 @@
     </header>
     <main class="content">
       <section class="section section-inicio" id="inicio">
-        <div class="section-inicio__content-group">
-          <h2 class="section-inicio__title">Diseño y desarrollo web para tu empresa o emprendimiento.</h2>
-        </div>
+        <h2 class="section__title section-inicio__title">Diseño y desarrollo web para tu empresa o emprendimiento.</h2>
+
         <img src="<%=require('./assets/illustration1.svg')%>" class="section-inicio__illustration" />
       </section>
       <section class="section section-nosotros" id="nosotros">
-        <h2 class="section-nosotros__title">Nosotros</h2>
+        <h2 class="section__title section-nosotros__title">Nosotros</h2>
         <img src="<%=require('./assets/illustration2.svg')%>" class="section-nosotros__illustration" />
         <p class="section-nosotros__text">
-          Somos una empresa argentina que se dedica al diseño y desarrollo de sitios web y de software. También
-          solucionamos problemas relacionados con sitios web existentes.
+          Somos una empresa argentina que se dedica al diseño y desarrollo de sitios web y de software. También hacemos
+          mantenimientos de sitios web y software.
           <br />
-          Contamos con el conocimiento y la experiencia para realizar dichas tareas.
+          Contamos con el conocimiento y la experiencia para realizar dichas tareas, y no paramos de mejorar nuestras
+          habilidades.
           <br />
           <br />
           ¿Por qué elerginos?
           <br />
           En nuestro equipo no nos quedamos en el pasado y usamos tecnologías más recientes; esto, nos ayuda a lograr un
-          producto de calidad, óptimo y eficaz que marca la diferencia con otras alternativas.
+          producto de calidad, óptimo y eficaz que nos diferencia de otras empresas.
         </p>
       </section>
       <section class="section section-servicios" id="servicios">
-        <h2 class="section-servicios__title">Servicios</h2>
-        <p>...</p>
+        <h2 class="section__title section-servicios__title">Servicios</h2>
+        <div class="section-servicios__content">
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">Diseño y desarrollo web a medida</h3>
+            <img src="<%=require('./assets/undraw_web_developer_p3e5.svg')%>" class="section-servicios-service__img" />
+            <p class="section-servicios-service__text">Desarrollo de aplicaciones y sitios web a medida.</p>
+          </section>
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">E-Commerce</h3>
+            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <p class="section-servicios-service__text">
+              Desarrollo de sitios web E-Commerce personalizados y flexibles.
+            </p>
+          </section>
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">Desarrollo de software a medida</h3>
+            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+
+            <p class="section-servicios-service__text">Desarrollo de software para escritorio personalizado.</p>
+          </section>
+
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">Soluciones de hosting</h3>
+            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+
+            <p class="section-servicios-service__text">
+              Instalamos y configuramos tu sitio web en un host.<br />
+              Te ayudamos con la instalación y/o configuración de sitios web externos a nuestra empresa.
+            </p>
+          </section>
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">Diseños responsive</h3>
+            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+
+            <p class="section-servicios-service__text">Diseños 100% responsive, adaptados a todos los dispositivos.</p>
+          </section>
+          <section class="section-servicios-service">
+            <h3 class="section-servicios-service__title">Mantenimiento de sitios web y software existente</h3>
+            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+
+            <p class="section-servicios-service__text">
+              Mantenimiento de sitios web existentes creados (o no) por nosotros.
+              <br />
+              Mantenimiento de software de escritorio.
+            </p>
+          </section>
+        </div>
       </section>
     </main>
     <footer class="footer">
