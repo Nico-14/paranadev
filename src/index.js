@@ -1,7 +1,6 @@
 import 'normalize.css';
 import './styles/style.scss';
 
-const header = document.getElementById('header');
 const navbar = document.getElementById('navbar');
 const menuButton = document.getElementById('menu-button');
 const handleLinkClick = ({ currentTarget }) => {
