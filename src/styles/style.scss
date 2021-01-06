@@ -5,9 +5,17 @@
   --secondary-text-color: #667077;
 }
 
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
 html {
   min-height: 100vh;
+  width: 100%;
 }
+
 body {
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
@@ -15,11 +23,12 @@ body {
 }
 
 .header {
-  padding: 1em 2em;
+  width: auto;
+  padding: 1em 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3em;
+  height: 5em;
   border-bottom: solid 1px #e6e9ea;
 
   &__title {
@@ -33,7 +42,7 @@ body {
 }
 
 .nav {
-  display: flex;
+  display: none;
   &__link {
     font-family: inherit;
     color: var(--primary-text-color);
@@ -50,22 +59,26 @@ body {
 }
 
 .content {
-  padding: 2em;
-  display: grid;
-  gap: 4em;
-  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
   display: flex;
   align-items: center;
+  align-content: center;
   justify-content: space-between;
-  padding: 2em;
+  flex-wrap: wrap;
+  margin: 4em 0;
+  h2 {
+    margin-top: 0;
+  }
 }
 
 .section-inicio {
-  flex-wrap: wrap;
-  &__main-content {
+  &__content-group,
+  &__illustration {
     width: 100%;
   }
 
@@ -79,27 +92,25 @@ body {
     color: var(--secondary-text-color);
     font-size: 1.6rem;
   }
-
-  &__illustration {
-    width: 100%;
-  }
 }
 
 .section-nosotros {
-  flex-direction: column;
   &__title {
     font-weight: 500;
     color: var(--primary-color);
     font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
   }
-  &__main-content {
-    display: flex;
-    justify-content: space-between;
+
+  &__illustration,
+  &__text {
+    width: 100%;
   }
+
   &__text {
     color: var(--primary-text-color);
     font-size: 1.3rem;
-    width: 45%;
   }
 }
 
@@ -112,5 +123,40 @@ body {
   }
   &__main-content {
     display: flex;
+  }
+}
+
+//Desktop
+@media screen and (min-width: 760px) {
+  .header {
+    padding: 1em 30px;
+  }
+
+  .content {
+    padding: 0 60px;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .section-inicio {
+    &__content-group {
+      flex: 2;
+      margin-right: 2em;
+    }
+    &__illustration {
+      flex: 3;
+    }
+  }
+
+  .section-nosotros {
+    &__illustration {
+      flex: 4;
+      margin-right: 3em;
+    }
+    &__text {
+      flex: 5;
+    }
   }
 }
