@@ -124,6 +124,7 @@ body {
 }
 
 .section-inicio {
+  margin-top: 1em;
   &__content-group,
   &__illustration {
     width: 100%;
@@ -195,6 +196,7 @@ body {
   }
 
   .section-inicio {
+    margin-top: 4em;
     &__content-group {
       flex: 2;
       margin-right: 2em;
