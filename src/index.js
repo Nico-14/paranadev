@@ -56,4 +56,5 @@ setTimeout(() => {
   observer.observe(document.getElementById('inicio'));
   observer.observe(document.getElementById('nosotros'));
   observer.observe(document.getElementById('servicios'));
+  observer.observe(document.getElementById('contacto'));
 }, 100);

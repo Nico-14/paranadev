@@ -25,6 +25,7 @@ body {
   background-color: var(--secondary-color);
 }
 
+//Header
 .header {
   position: sticky;
   padding: 1em 20px;
@@ -75,6 +76,7 @@ body {
   }
 }
 
+//Navbar
 .nav {
   display: none;
   &__link {
@@ -106,12 +108,14 @@ body {
   }
 }
 
+//Main content
 .content {
-  padding: 0 15px 50px 15px;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
 }
 
+//General section style
 .section {
   display: flex;
   align-items: center;
@@ -130,6 +134,7 @@ body {
   }
 }
 
+//Section inicio
 .section-inicio {
   margin-top: 2em;
   &__title,
@@ -150,6 +155,7 @@ body {
   }
 }
 
+//Section nosotros
 .section-nosotros {
   &__illustration,
   &__text {
@@ -159,9 +165,11 @@ body {
   &__text {
     color: var(--primary-text-color);
     font-size: 1.3rem;
+    margin: 2em 0 0 0;
   }
 }
 
+//Section servicios
 .section-servicios {
   flex-direction: column;
   &__content {
@@ -198,8 +206,43 @@ body {
   }
 }
 
+//Section contacto
+.section-contacto {
+  &__illustration {
+    width: 100%;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0 0 0;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.8em;
+  }
+
+  &__list-item svg {
+    width: 1.7rem;
+    margin-right: 0.6em;
+    fill: var(--primary-color);
+  }
+
+  &__list-item a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-size: 1.4rem;
+    &:hover {
+      color: var(--secondary-text-color);
+    }
+  }
+}
+
 //Desktop
 @media screen and (min-width: 970px) {
+  //Header
   .header {
     padding: 1em 30px;
     &__menu-button {
@@ -207,10 +250,12 @@ body {
     }
   }
 
+  //Main content
   .content {
-    padding: 0 60px 50px 60px;
+    padding: 0 60px;
   }
 
+  //Navbar
   .nav {
     display: block;
 
@@ -224,6 +269,7 @@ body {
     }
   }
 
+  //Section inicio
   .section-inicio {
     margin-top: 4em;
     &__title {
@@ -235,6 +281,7 @@ body {
     }
   }
 
+  //Section nosotros
   .section-nosotros {
     &__illustration {
       flex: 2;
@@ -245,6 +292,7 @@ body {
     }
   }
 
+  //Section servicios
   .section-servicios {
     &__content {
       grid-template-columns: repeat(3, 1fr);
@@ -258,8 +306,20 @@ body {
       height: 10rem;
     }
   }
+
+  //Section contacto
+  .section-contacto {
+    &__illustration {
+      flex: 4;
+      margin-right: 6em;
+    }
+    &__list {
+      flex: 1;
+    }
+  }
 }
 
+//Footer
 .footer {
   background-color: var(--primary-color);
   padding: 1em;
