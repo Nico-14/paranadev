@@ -94,6 +94,7 @@ body {
   &__link {
     display: block;
   }
+
   &.is-showing {
     display: block;
     position: absolute;
@@ -212,8 +213,13 @@ body {
 
   .nav {
     display: block;
-    position: initial;
-    &__link {
+
+    &.is-showing {
+      position: initial;
+      width: auto;
+      border: 0;
+    }
+    .nav__link {
       display: inline;
     }
   }

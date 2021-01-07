@@ -5,17 +5,10 @@ const navbar = document.getElementById('navbar');
 const goToTopButton = document.getElementById('go-to-top-button');
 const menuButton = document.getElementById('menu-button');
 
-const removeCurrentActiveLink = () => {
-  const currentActiveLink = navbar.querySelector('a.active');
-  if (currentActiveLink) currentActiveLink.classList.remove('active');
-};
-
 const handleLinkClick = (e) => {
   e.preventDefault();
-  removeCurrentActiveLink();
   navbar.classList.remove('is-showing');
   menuButton.classList.remove('is-showing');
-  e.currentTarget.classList.add('active');
 
   const section = document.getElementById(e.currentTarget.dataset.target);
   section?.scrollIntoView();
@@ -38,15 +31,13 @@ goToTopButton.addEventListener('click', handleGoToTopClick);
 
 let observer = new IntersectionObserver(
   (entries) => {
+    console.log(observer);
     for (const entry of entries) {
       if (entry.isIntersecting) {
-        /*        if ('#' + entry.target.id != location.hash) {
-          history.pushState(null, null, '#' + entry.target.id);
-          removeCurrentActiveLink();
-          navbar.querySelector(`a[href="${location.hash}"]`)?.classList.add('active');
-        } */
-        removeCurrentActiveLink();
+        navbar.querySelector('a.active')?.classList.remove('active');
+
         navbar.querySelector(`a[data-target=${entry.target.id}]`)?.classList.add('active');
+
         if (entry.target.id != 'inicio') {
           goToTopButton.style.opacity = '1';
           goToTopButton.style.visibility = 'visible';
@@ -61,6 +52,8 @@ let observer = new IntersectionObserver(
   { threshold: 0.5 }
 );
 
-observer.observe(document.getElementById('inicio'));
-observer.observe(document.getElementById('nosotros'));
-observer.observe(document.getElementById('servicios'));
+setTimeout(() => {
+  observer.observe(document.getElementById('inicio'));
+  observer.observe(document.getElementById('nosotros'));
+  observer.observe(document.getElementById('servicios'));
+}, 100);
