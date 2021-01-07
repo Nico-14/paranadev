@@ -35,7 +35,6 @@ let observer = new IntersectionObserver(
       if (entry.isIntersecting) {
         navbar.querySelector('a.active')?.classList.remove('active');
         navbar.querySelector(`a[data-target=${entry.target.id}]`)?.classList.add('active');
-        console.log(entry.target.id);
         if (entry.target.id != 'inicio') {
           goToTopButton.style.opacity = '1';
           goToTopButton.style.visibility = 'visible';
@@ -47,7 +46,7 @@ let observer = new IntersectionObserver(
     }
   },
 
-  { rootMargin: '-20% 0px -80% 0px' }
+  { rootMargin: '-20% 0px -70% 0px' }
 );
 
 setTimeout(() => {
