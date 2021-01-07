@@ -31,11 +31,9 @@ goToTopButton.addEventListener('click', handleGoToTopClick);
 
 let observer = new IntersectionObserver(
   (entries) => {
-    console.log(observer);
     for (const entry of entries) {
       if (entry.isIntersecting) {
         navbar.querySelector('a.active')?.classList.remove('active');
-
         navbar.querySelector(`a[data-target=${entry.target.id}]`)?.classList.add('active');
 
         if (entry.target.id != 'inicio') {
@@ -49,7 +47,7 @@ let observer = new IntersectionObserver(
     }
   },
 
-  { threshold: 0.5 }
+  { threshold: 0.2 }
 );
 
 setTimeout(() => {
