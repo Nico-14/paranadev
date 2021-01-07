@@ -52,15 +52,15 @@
         />
       </svg>
     </button>
-    <header class="header">
+    <header class="header" id="header">
       <h1 class="header__title">
         <a href="/"> <img src="<%=require('./assets/logo.svg')%>" alt="ParanáDev" class="header__logo" /> </a>
       </h1>
       <nav class="nav" id="navbar">
-        <a class="nav__link active" href="#inicio">Inicio</a>
-        <a class="nav__link" href="#nosotros">Nosotros</a>
-        <a class="nav__link" href="#servicios">Servicios</a>
-        <a class="nav__link" href="#inicio">Contacto</a>
+        <a class="nav__link active" href="/" data-target="inicio">Inicio</a>
+        <a class="nav__link" href="/" data-target="nosotros">Nosotros</a>
+        <a class="nav__link" href="/" data-target="servicios">Servicios</a>
+        <a class="nav__link" href="/" data-target="contacto">Contacto</a>
       </nav>
       <button class="header__menu-button" id="menu-button">
         <svg width="100%" height="100%" viewBox="0 0 44 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -98,26 +98,26 @@
         <div class="section-servicios__content">
           <section class="section-servicios-service">
             <h3 class="section-servicios-service__title">Diseño y desarrollo web a medida</h3>
-            <img src="<%=require('./assets/undraw_web_developer_p3e5.svg')%>" class="section-servicios-service__img" />
+            <img src="<%=require('./assets/diseño-desarrollo-web.svg')%>" class="section-servicios-service__img" />
             <p class="section-servicios-service__text">Desarrollo de aplicaciones y sitios web a medida.</p>
           </section>
           <section class="section-servicios-service">
-            <h3 class="section-servicios-service__title">E-Commerce</h3>
-            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <h3 class="section-servicios-service__title">E-Commerce (Tienda online)</h3>
+            <img src="<%=require('./assets/E-commerce.svg')%>" class="section-servicios-service__img" />
             <p class="section-servicios-service__text">
               Desarrollo de sitios web E-Commerce personalizados y flexibles.
             </p>
           </section>
           <section class="section-servicios-service">
             <h3 class="section-servicios-service__title">Desarrollo de software a medida</h3>
-            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <img src="<%=require('./assets/software a medida.svg')%>" class="section-servicios-service__img" />
 
             <p class="section-servicios-service__text">Desarrollo de software para escritorio personalizado.</p>
           </section>
 
           <section class="section-servicios-service">
             <h3 class="section-servicios-service__title">Soluciones de hosting</h3>
-            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <img src="<%=require('./assets/hosting.svg')%>" class="section-servicios-service__img" />
 
             <p class="section-servicios-service__text">
               Instalamos y configuramos tu sitio web en un host.<br />
@@ -126,13 +126,13 @@
           </section>
           <section class="section-servicios-service">
             <h3 class="section-servicios-service__title">Diseños responsive</h3>
-            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <img src="<%=require('./assets/responsive.svg')%>" class="section-servicios-service__img" />
 
             <p class="section-servicios-service__text">Diseños 100% responsive, adaptados a todos los dispositivos.</p>
           </section>
           <section class="section-servicios-service">
             <h3 class="section-servicios-service__title">Mantenimiento de sitios web y software existente</h3>
-            <img src="<%=require('./assets/undraw_add_to_cart_vkjp.svg')%>" class="section-servicios-service__img" />
+            <img src="<%=require('./assets/mantenimiento.svg')%>" class="section-servicios-service__img" />
 
             <p class="section-servicios-service__text">
               Mantenimiento de sitios web existentes creados (o no) por nosotros.
@@ -142,9 +142,12 @@
           </section>
         </div>
       </section>
+      <section class="section section-contacto" id="contacto">
+        <h2 class="section__title">Contacto</h2>
+      </section>
     </main>
     <footer class="footer">
-      <p>Copyright © 2021 paranadev.com</p>
+      <p>Copyright © 2021 <a href="/">paranadev.com</a></p>
     </footer>
   </body>
 </html>

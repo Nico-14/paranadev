@@ -171,6 +171,7 @@ body {
 }
 
 .section-servicios-service {
+  width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,7 +186,7 @@ body {
     box-sizing: content-box;
   }
   &__img {
-    height: 10rem;
+    width: 80%;
     margin-bottom: 3em;
   }
   &__text {
@@ -197,7 +198,7 @@ body {
 }
 
 //Desktop
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 970px) {
   .header {
     padding: 1em 30px;
     &__menu-button {
@@ -245,6 +246,11 @@ body {
   }
 
   .section-servicios-service {
+    width: auto;
+    &__img {
+      width: auto;
+      height: 10rem;
+    }
   }
 }
 
@@ -256,6 +262,9 @@ body {
     margin: 0;
     text-align: center;
     font-weight: 500;
+  }
+  a {
+    color: var(--secondary-color);
   }
 }
 
