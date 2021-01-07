@@ -25,6 +25,10 @@ body {
   background-color: var(--secondary-color);
 }
 
+.contet {
+  display: flex;
+  flex-direction: column;
+}
 //Header
 .header {
   position: sticky;
