@@ -274,15 +274,15 @@ body {
     }
     &__illustration {
       flex: 3;
-      width: 50%;
+      width: 0;
     }
   }
 
   //Section nosotros
   .section-nosotros {
     &__illustration {
-      width: 50%;
       flex: 2;
+      width: 0;
     }
     &__text {
       margin-left: 8em;
@@ -308,8 +308,8 @@ body {
   //Section contacto
   .section-contacto {
     &__illustration {
-      width: 50%;
       flex: 4;
+      width: 0;
       margin-right: 6em;
     }
     &__list {
