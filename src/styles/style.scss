@@ -124,7 +124,7 @@ body {
     color: var(--primary-color);
     font-weight: 500;
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 100%;
     text-align: center;
   }
@@ -141,7 +141,7 @@ body {
   &__title {
     width: auto;
     text-align: left;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0 1em 0;
   }
 
@@ -160,7 +160,7 @@ body {
 
   &__text {
     color: var(--primary-text-color);
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     margin: 2em 0 0 0;
   }
 }
@@ -270,6 +270,7 @@ body {
     margin-top: 4em;
     &__title {
       flex: 2;
+      font-size: 4rem;
       margin: 0 2em 0 0;
     }
     &__illustration {
