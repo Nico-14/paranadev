@@ -111,8 +111,8 @@ body {
   }
 }
 
-//General section style
-.section {
+//General arcticle style
+.arcticle {
   display: flex;
   align-items: center;
   align-content: center;
@@ -130,8 +130,8 @@ body {
   }
 }
 
-//Section inicio
-.section-inicio {
+//arcticle inicio
+.arcticle-inicio {
   margin-top: 2em;
   &__title,
   &__illustration {
@@ -151,8 +151,8 @@ body {
   }
 }
 
-//Section nosotros
-.section-nosotros {
+//arcticle nosotros
+.arcticle-nosotros {
   &__illustration,
   &__text {
     width: 100%;
@@ -165,8 +165,8 @@ body {
   }
 }
 
-//Section servicios
-.section-servicios {
+//arcticle servicios
+.arcticle-servicios {
   flex-direction: column;
   &__content {
     display: grid;
@@ -175,7 +175,7 @@ body {
   }
 }
 
-.section-servicios-service {
+.arcticle-servicios-service {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -202,8 +202,8 @@ body {
   }
 }
 
-//Section contacto
-.section-contacto {
+//arcticle contacto
+.arcticle-contacto {
   &__illustration {
     width: 100%;
   }
@@ -260,13 +260,13 @@ body {
     }
   }
 
-  //Section {
-  .section {
+  //arcticle {
+  .arcticle {
     margin-left: 2.5em;
     margin-right: 2.5em;
   }
-  //Section inicio
-  .section-inicio {
+  //arcticle inicio
+  .arcticle-inicio {
     margin-top: 4em;
     &__title {
       flex: 2;
@@ -279,26 +279,27 @@ body {
     }
   }
 
-  //Section nosotros
-  .section-nosotros {
+  //arcticle nosotros
+  .arcticle-nosotros {
     &__illustration {
       flex: 2;
       width: 40%;
     }
     &__text {
-      margin-left: 8em;
+      margin: 0 0 0 3em;
       flex: 2;
+      font-size: 2rem;
     }
   }
 
-  //Section servicios
-  .section-servicios {
+  //arcticle servicios
+  .arcticle-servicios {
     &__content {
       grid-template-columns: repeat(3, 1fr);
     }
   }
 
-  .section-servicios-service {
+  .arcticle-servicios-service {
     width: auto;
     &__img {
       width: auto;
@@ -306,8 +307,8 @@ body {
     }
   }
 
-  //Section contacto
-  .section-contacto {
+  //arcticle contacto
+  .arcticle-contacto {
     &__illustration {
       flex: 4;
       width: 0;
